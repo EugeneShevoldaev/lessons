@@ -7,8 +7,8 @@ for i in range(1, 20):  # перебор всех значений для под
     for j in range(1, 20):
         if number % (i + j) == 0 and i <= j:
             pas = (i, j)
-            revers_pair = (j, i)
-            if pas not in password and revers_pair not in password:
+            revers_pas = (j, i)
+            if pas not in password and revers_pas not in password:
                 password.append(pas)
 
 
