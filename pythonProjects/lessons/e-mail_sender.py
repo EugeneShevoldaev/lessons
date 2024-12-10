@@ -1,4 +1,4 @@
-def send_email(message='Привет!', recipient='pupkin@mail.ru',*,sender="university.help@gmail.com"):
+def send_email(message='Привет!', recipient='vasyok1337@gmail.com',*,sender="university.help@gmail.com"):
     # проверка на наличие символа '@'
     if '@' not in sender or '@' not in recipient:
         print(f'не возможно отправить письмо с адреса {sender} на адрес {recipient} нет собаки')
