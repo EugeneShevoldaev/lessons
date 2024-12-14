@@ -1,7 +1,7 @@
 def send_email(message='Привет!', recipient='vasyok1337@gmail.com',*,sender="university.help@gmail.com"):
     # проверка на наличие символа '@'
     if '@' not in sender or '@' not in recipient:
-        print(f'не возможно отправить письмо с адреса {sender} на адрес {recipient} нет собаки')
+        print(f'не возможно отправить письмо с адреса {sender} на адрес {recipient}')
         return
     # проверка наличия доменов
     valid_domains = ['.ru', '.com', '.net']
@@ -9,7 +9,7 @@ def send_email(message='Привет!', recipient='vasyok1337@gmail.com',*,sende
     resolt_for_recipient = any(domain in recipient for domain in valid_domains)
     resolt = resolt_for_sender + resolt_for_recipient
     if resolt < 2:
-        print(f'не возможно отправить письмо с адреса {sender} на адрес {recipient} нет домена')
+        print(f'не возможно отправить письмо с адреса {sender} на адрес {recipient}')
         return
 
 
