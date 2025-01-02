@@ -10,5 +10,7 @@ class Hous:
             for i in range(1, new_floor):
                 print(i)
 
-zhuk = Hous('Zhukovsky', 10)
-zhuk.go_to(9)
+h1 = Hous('Жуковский', 10)
+h2=Hous('Суворовский', 5)
+h1.go_to(8)
+h2.go_to(9)
