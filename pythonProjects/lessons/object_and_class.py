@@ -7,7 +7,7 @@ class Hous:
         if not  isinstance(new_floor, int) or new_floor < 1 or new_floor > self.number_of_floor:
             print('такой этаж не существует')
         else:
-            for i in range(1, new_floor):
+            for i in range(1, new_floor+1):
                 print(i)
 
 h1 = Hous('Жуковский', 10)
